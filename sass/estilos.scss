@@ -1,0 +1,141 @@
+
+
+$colorprincipal: rgb(238, 0, 238) ;
+$paleta: ( 'principal': #B90B73,
+'secundario': dodgerblue);
+
+@font-face {
+    font-family: squartiqa4f;
+    src: url('../Disenos/Squartiqa4F.ttf')format('truetype');
+}
+
+
+.jugadores2 { @extend .jugadores }
+
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    align-items: center;
+    .etiquetas{
+    color: map-get($map: $paleta , $key: principal ); font-family: 'Raleway', sans-serif; 
+    vertical-align: top;
+    align-items: center;
+    grid-column: 6/10;
+    font-size: 20px;};
+    .titulo {
+        color: aliceblue; 
+        font-size: 20px;
+        grid-column: 2/3;
+        font-size: 40px;} } 
+
+ul{
+    
+    list-style-type: none; 
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    justify-content: end
+}
+body{
+    margin: 0px;;
+    padding: 0;
+    background: url(../Disenos/Fondo.png);
+    background-size: cover;
+    background-position: center;
+
+}
+.formulario{
+    color: aliceblue;
+    display: grid;
+    justify-content: center;
+}
+.main { display: grid;
+    grid-template-columns: repeat(9,1fr)  repeat(100px);
+margin: 200px;
+.texto1 {color: white; font-size: 170px;
+grid-column: 1/3; font-family: squartiqa4f;}
+.texto2 {color: white; font-size: 30px;
+    grid-column: 1/3}
+.texto3 {color: white; font-size: 20px;
+    grid-column: 1/3}
+.botones{color: white; font-size: x-large; background-color: map-get($map: $paleta, $key: principal );
+    grid-column: 1/3
+} }
+
+.haxlogo {width: 400px;}
+.main .logo
+{grid-column: 4/9; width: 100px; size: 100px;}
+
+.jugadores {display: flex;
+justify-content: end;
+}
+
+
+.maincontacto {display: grid;
+grid-template-columns: (9,1fr);}
+
+
+
+.texto1cont
+{color: white;
+display: flex;
+justify-content: center;
+font-family: squartiqa4f}
+
+
+.navecolor
+{color: white;}
+
+.jugadores {display: flex;
+justify-items: center;}
+
+.sobrenos1 {
+    font-family: squartiqa4f; color: white; ;
+    margin: 20px;
+}
+.sobrenos
+{ color: white; ;
+margin: 20px;}
+
+.sobrenos2
+{ color: white; ;
+margin: 20px;}
+
+.textoform
+{color: white;
+margin: 2000px;}
+
+@media screen and (max-width: 600px)
+{.haxlogo {width: 170px;
+    transform:translate(-150px,-100px)}
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    align-items: center;}
+
+.navbar .etiquetas{
+    color: rgb(238, 0, 238); font-family: 'Raleway', sans-serif; 
+    font-size: 5px;
+    transform:translate(50px,0px)
+} 
+.navbar .titulo {
+    color: aliceblue; 
+    grid-column: 1/3;
+    font-size: 0px;}
+
+    .main .texto1 {color: white; font-size: 70px;
+        grid-column: 1/3; 
+        transform:translate(-150px,-200px) }
+        .main .texto2 {color: white; font-size: 25px;
+            grid-column: 1/3;
+        transform:translate(-150px,-200px)}
+        .main .texto3 {color: white; font-size: 20px;
+            grid-column: 1/3;
+            transform:translate(-150px,-200px)}
+        .main .botones{
+        font-size: 20px; transform: translate(-100px, -110px);background: none; color: magenta;}
+        .redes { transform: translate(-30px, -400px);font-size: 10px;}
+        .nuestrasredes {font-size: 0px;}
+        .jugadores {display: flex;
+            justify-content: end;
+            width: 300px; }  .juegos { width: 400px;} .texto1cont {width: 320px; transform: translate(20px,0px) } }
