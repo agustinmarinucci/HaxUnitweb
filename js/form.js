@@ -1,13 +1,13 @@
 function datosform (params) {
-    var nombre=document.getElementById("form_name").value;
+    let nombre=document.getElementById("form_name").value;
     console.log(nombre);
-    var apellido=document.getElementById("form_lastname").value;
+    let apellido=document.getElementById("form_lastname").value;
     console.log(apellido)
-    var Correo=document.getElementById("form_email").value;
+    let Correo=document.getElementById("form_email").value;
     console.log(Correo);
-    var videojuego=document.getElementById("form_need").value;
+    let videojuego=document.getElementById("form_need").value;
     console.log(videojuego);
-    var comentario=document.getElementById("form_message").value;
+    let comentario=document.getElementById("form_message").value;
     console.log(comentario)
     if (nombre=="")  { alert ("Digite su nombre")
     } else {
