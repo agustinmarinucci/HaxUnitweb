@@ -14,13 +14,3 @@ function datosform (params) {
     console.log(datos);
     }
 
-
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxfirqPZS5kI1O346TPG35nVzewqC5w4SXCMb-XLHIozzCrTXqszQfgWQ9yICkyYGjl4A/exec'
-    const form = document.forms['submit-form']
-    
-    form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
