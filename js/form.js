@@ -11,6 +11,9 @@ function datosform (params) {
     if (videojuego=="")  { alert ("Elija su videojuego")}
     if (comentario=="")  { alert ("Deje un comentario")};
     let datos = [ { nombre: nombre, apellido: apellido, email: Correo, videojuego: videojuego, comentario: comentario}];
-    console.log(datos);
-    }
+    console.log(datos); 
+    localStorage.setItem("datos", JSON.stringify (datos)  )}
+let submitbutton = document.getElementById("submitbutton"); 
+submitbutton.addEventListener("click", datosform)
+
 
